@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Haven Health Insurance</title>
+  <meta name="description" content="Haven Health Insurance helps families and individuals compare plans with confidence. Insurance made easy." />
+  <meta property="og:title" content="Haven Health Insurance" />
+  <meta property="og:description" content="Insurance made easy. Compare health plans with licensed experts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://havenhealthinsurance.com/" />
+  <link rel="canonical" href="https://havenhealthinsurance.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .hero { padding: 8rem 0 5rem; background: linear-gradient(180deg, var(--navy) 0%, #10213b 100%); color: #fff; }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; }
+    .hero h1 { color: #fff; font-size: clamp(2.2rem, 4vw, 4rem); margin-bottom: 1rem; }
+    .hero p { max-width: 40rem; margin-bottom: 2rem; font-size: 1.1rem; color: #f3eee4; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .hero .btn-outline { border-color: rgba(255,255,255,.7); color: #fff; }
+    .hero .btn-outline:hover { background: #fff; color: var(--navy); }
+    .section-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .card { background: #fff; border: 1px solid #e2d9ca; border-radius: 14px; padding: 1.5rem; }
+    .card h3 { margin-bottom: .5rem; }
+    .contact-home { background: var(--ivory); }
+    @media (max-width: 900px) { .hero-grid, .section-grid-3 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html" aria-label="Haven Health Insurance home"><span class="logo-mark">H</span><span>Haven Health Insurance</span></a>
+      <nav class="desktop-nav" aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="blog/index.html">Blog</a><a href="contact.html">Contact</a></nav>
+      <a class="btn btn-gold desktop-cta" href="contact.html">Get a Quote</a>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile"><a href="index.html">Home</a><a href="about.html">About</a><a href="blog/index.html">Blog</a><a href="contact.html">Contact</a><a class="btn btn-gold" href="contact.html">Get a Quote</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Insurance made easy.</p>
+          <h1>Health coverage that feels human, not scripted.</h1>
+          <p>Haven Health Insurance is a licensed brokerage helping individuals, families, and small teams compare plans with clear guidance and bilingual-friendly support.</p>
+          <div class="hero-actions"><a class="btn btn-gold" href="contact.html">Get a Quote</a><a class="btn btn-outline" href="#plans">See Coverage Options</a></div>
+        </div>
+        <aside class="medallion" aria-label="Licensed brokerage highlight"><span class="medallion-label">Licensed Brokerage</span><strong>30+ Years</strong><span>Combined experience helping families protect what matters.</span></aside>
+      </div>
+    </section>
+    <section class="trust-bar"><div class="container trust-grid"><p>Trusted by families across multiple states</p><p>[LICENSE #]</p><p>Carrier options tailored to your needs</p></div></section>
+    <section id="plans" class="section">
+      <div class="container">
+        <p class="eyebrow">Coverage Options</p>
+        <h2>Choose with confidence</h2>
+        <div class="section-grid-3">
+          <article class="card"><h3>Individual &amp; Family Plans</h3><p>ACA and private options explained in plain language so you can choose what fits your budget and care needs.</p></article>
+          <article class="card"><h3>Medicare Guidance</h3><p>Understand plan types, enrollment windows, and provider networks without the confusion.</p></article>
+          <article class="card"><h3>Supplemental Coverage</h3><p>Add dental, vision, and critical illness protection where it makes sense for your family.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-home" id="contact">
+      <div class="container contact-grid">
+        <div><p class="eyebrow">Talk to Haven</p><h2>Start your coverage comparison today</h2><p>Call <strong>[PHONE]</strong> or send us your details and a licensed advisor will follow up.</p><p><strong>Address:</strong> [ADDRESS]</p></div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label><input id="name" name="name" type="text" required />
+          <label for="email">Email</label><input id="email" name="email" type="email" required />
+          <label for="phone">Phone</label><input id="phone" name="phone" type="tel" required />
+          <label for="message">What kind of coverage are you looking for?</label><textarea id="message" name="message" rows="4"></textarea>
+          <button class="btn btn-gold" type="submit">Request My Quote</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="index.html" aria-label="Haven Health Insurance home"><span class="logo-mark">H</span><span>Haven Health Insurance</span></a><p>Insurance made easy. Licensed insurance brokerage serving individuals and families.</p></div>
+      <div><h3>Company</h3><ul><li><a href="about.html">About</a></li><li><a href="blog/index.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h3>Legal</h3><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li>[PHONE]</li><li>[ADDRESS]</li><li>[LICENSE #]</li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="current-year"></span> Haven Health Insurance. All rights reserved.</p></div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

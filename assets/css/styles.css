@@ -1,0 +1,59 @@
+:root {
+  --navy: #0A1628;
+  --gold: #D4AF37;
+  --cream: #FBF7EF;
+  --ivory: #F6F1E8;
+  --text: #1b2230;
+  --muted: #4f5b70;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: var(--font-body); color: var(--text); background: var(--cream); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3 { margin: 0 0 .75rem; line-height: 1.15; font-family: var(--font-display); color: var(--navy); }
+p { margin: 0 0 1rem; color: var(--muted); }
+.container { width: min(1120px, 92%); margin: 0 auto; }
+.section { padding: 4rem 0; }
+.section-tight { padding-top: 1rem; padding-bottom: 1rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; color: var(--gold); font-weight: 700; }
+.btn { display: inline-block; border-radius: 999px; border: 1px solid transparent; padding: .65rem 1.1rem; font-weight: 600; transition: .2s ease; }
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-gold:hover { filter: brightness(.95); }
+.btn-outline { border-color: var(--navy); color: var(--navy); background: transparent; }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+.site-header { position: sticky; top: 0; z-index: 30; background: rgba(10, 22, 40, .96); color: #fff; border-bottom: 1px solid rgba(212, 175, 55, .35); }
+.nav-wrap { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.logo { display: inline-flex; align-items: center; gap: .6rem; font-weight: 600; }
+.logo-mark { width: 1.9rem; height: 1.9rem; border-radius: 50%; border: 1px solid var(--gold); display: grid; place-items: center; color: var(--gold); font-family: var(--font-display); font-size: 1.15rem; }
+.desktop-nav { display: flex; gap: 1.2rem; }
+.desktop-nav a { color: #f4efe4; }
+.desktop-nav a:hover { color: var(--gold); }
+.hamburger { display: none; border: 0; background: transparent; color: #fff; font-size: 1.3rem; }
+.mobile-nav { display: none; padding: 0 4%; background: var(--navy); border-top: 1px solid rgba(255,255,255,.12); }
+.mobile-nav a { display: block; padding: .65rem 0; color: #f4efe4; }
+.mobile-nav.open { display: block; }
+.desktop-cta { margin-left: auto; }
+.medallion { background: radial-gradient(circle at 30% 30%, #f4e7bc, #d6b252 65%, #c69f34 100%); color: var(--navy); border-radius: 50%; width: min(330px, 80vw); aspect-ratio: 1; margin-inline: auto; display: grid; place-items: center; text-align: center; padding: 2rem; border: 6px double rgba(10, 22, 40, .35); }
+.medallion strong { font-family: var(--font-display); font-size: 2rem; }
+.medallion-label { text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; }
+.trust-bar { background: var(--ivory); border-top: 1px solid #e5dbc8; border-bottom: 1px solid #e5dbc8; }
+.trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center; padding: 1rem 0; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.contact-form { display: grid; gap: .5rem; background: #fff; border: 1px solid #e2d9ca; border-radius: 14px; padding: 1.25rem; }
+.contact-form label { font-size: .9rem; font-weight: 600; color: var(--navy); }
+.contact-form input, .contact-form textarea { border: 1px solid #d9cfbf; border-radius: 10px; padding: .6rem .75rem; font: inherit; }
+.site-footer { background: var(--navy); color: #f3ebde; padding-top: 2.5rem; }
+.site-footer p, .site-footer a, .site-footer li, .site-footer h3 { color: #f3ebde; }
+.footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 1.2rem; }
+.site-footer ul { list-style: none; margin: 0; padding: 0; }
+.site-footer li { margin-bottom: .45rem; }
+.footer-bottom { padding: 1.2rem 0; margin-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.12); font-size: .9rem; }
+
+@media (max-width: 900px) {
+  .desktop-nav, .desktop-cta { display: none; }
+  .hamburger { display: block; }
+  .trust-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+}
